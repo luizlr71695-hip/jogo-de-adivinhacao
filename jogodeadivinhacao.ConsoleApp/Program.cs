@@ -1,4 +1,10 @@
-﻿/*
+﻿using System.Security.Cryptography;
+
+
+
+
+/*
+
 v1
 
 Iremos fazer um jogo onde o usuário terá chances de acertar um número aleatório decidido pelo sistema.
@@ -22,6 +28,8 @@ Console.WriteLine();
 Console.Write("Digite um numero: ");
 string strnumeroDigitado = Console.ReadLine();
 
-Console.WriteLine(" o numero digitado foi: " + strnumeroDigitado);
+int numeroaleatorio = RandomNumberGenerator.GetInt32(1, 21);
+
+Console.WriteLine("O numero aleatório: " + numeroaleatorio);
 
 Console.ReadLine();
